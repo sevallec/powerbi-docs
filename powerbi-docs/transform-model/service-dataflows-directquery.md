@@ -40,6 +40,7 @@ To ensure your dataflow is available for DirectQuery access, the enhanced comput
 
 Once you've applied that setting, refresh the dataflow for the optimization to take effect. 
 
+## Using PowerBI desktop 
 
 ## Considerations and limitations
 
