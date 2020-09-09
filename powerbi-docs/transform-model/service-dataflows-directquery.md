@@ -32,14 +32,28 @@ There are also prerequisites for using DirectQuery with dataflows:
 * Your dataflow must reside within a Power BI Premium enabled workspace
 * The **compute engine** must be turned on. For more information about the compute engine, see [the enhanced compute engine](service-dataflows-enhanced-compute-engine.md).
 
-## Enable DirectQuery for dataflows
+## To be able to create dataflows that can be use in direct query mode you need to follow this steps: 
 
-To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **On**. The following image shows the setting properly selected.
+	1. Create a Dataflow in power bi service
+	
+	https://docs.microsoft.com/en-us/power-bi/transform-model/service-dataflows-create-use
 
-![Enable the enhanced compute engine for dataflows](media/service-dataflows-directquery/dataflows-directquery-01.png)
+  2. To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new    **Enhanced compute engine settings** option to **On**. The following image shows the setting properly selected.
+  
+  SCREENSHOT SHOWING HOW TO GO TO DATAFLOW SETTINGS 
 
-Once you've applied that setting, refresh the dataflow for the optimization to take effect. 
+  ![Enable the enhanced compute engine for dataflows](media/service-dataflows-directquery/dataflows-directquery-01.png)
 
+  3. Once you've applied that setting, refresh the dataflow for the optimization to take effect. 
+  
+  4. Got to power bi desktop and sign in
+  
+	5. Go to Get Data and selected the "Power bi dataflows" connector
+     You are going to get a view of all the workspaces that you have access to and when you expand them you will see your dataflows. Make sure you expand your workspace that          contains the dataflow that we just created and refreshed and then connect to the entities within this dataflow and click load or transform data 
+     
+  6.If you selected transform data, after your transformations when you click "Close and apply" you should get the below pop up. The same pop up you will get right after you click "Load"
+
+  SCREENSHOT SHOWING THE POP UP THAT POWERBI DESKTOP SHOWS TO SELECT THE STORAGE MODE 
 
 ## Considerations and limitations
 
